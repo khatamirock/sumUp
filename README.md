@@ -6,5 +6,6 @@ The Advanced Bangla Text-Summarizer |LIVE🔴|> https://test-summ.herokuapp.com/
 
 # Run natively
 ### 1.Download or clone
+### (-) install required modules from requirements.txt
 ### 2.Then run the app.py file
 ### 3.Goto browser localhost
