@@ -1,0 +1,145 @@
+@import 'colors';
+@import 'media_query';
+
+
+$same-width: 30px;
+
+@mixin samePad($width) {
+
+    padding-left: $width ;
+    padding-right: $width;
+    align-items: center;
+}
+
+%ali-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.items-nav {
+    opacity: 0;
+    color: $dark;
+    font-size: 50px;
+    text-decoration: none;
+    @include samePad(50%);
+
+}
+
+.navbar {
+    background: $green;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    @include samePad($same-width);
+    position: relative;
+
+    &__logo {
+        color: $dark-navy;
+        font-family: 'Press Start 2P', cursive;
+
+        font-weight: bold;
+        font-size: 30px;
+        @extend %ali-center;
+
+
+    }
+
+    &__bars {
+        opacity: 0;
+
+        @include tablet {
+            opacity: 1;
+            position: absolute;
+
+            right: 10%;
+            font-size: 140%;
+
+            &:hover {
+                color: $dark-navy;
+            }
+        }
+    }
+
+    &__menu {
+        @include tablet {
+            display: none;
+        }
+
+        &__links {
+            color: $dark;
+            text-decoration: none;
+            padding: 10px;
+            font-family: 'Righteous', cursive;
+            font-weight: 600;
+
+            &:hover {
+                color: $navy;
+                transition: color 0.4s ease-in-out;
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+.navbar-1 {
+    background: $green;
+
+    .navbar-brand {
+        font-size: 30px !important;
+        font-family: 'Press Start 2P', cursive !important;
+    }
+
+    .nav-item {
+        a {
+            font-family: 'Righteous', cursive;
+            font-size: 105%;
+        }
+    }
+
+    .navbar-nav {
+        display: flex !important;
+        align-items: center;
+    }
+
+    button {
+        font-size: 1rem;
+        background-color: #0dcaf0;
+        padding: 14px 32px;
+        border: none;
+        border-radius: 4px;
+        color: $dark-navy;
+
+        @include samePad(.5rem);
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s;
+        outline: none;
+
+        a {
+            position: relative;
+            z-index: 2;
+            font-family: 'Righteous', cursive;
+            color: black;
+            font-weight: bold;
+            // color: $green;
+            text-decoration: none;
+        }
+    }
+}

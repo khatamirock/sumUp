@@ -1,0 +1,65 @@
+@mixin padder-x($padd) {
+    padding-left: $padd  !important;
+    padding-right: $padd  !important;
+
+}
+
+@mixin padder-y($padd) {
+    padding-top: $padd  !important;
+    padding-bottom: $padd  !important;
+
+}
+
+@mixin margin-x($marg) {
+    margin-left: $marg  !important;
+    margin-right: $marg  !important;
+
+}
+
+@mixin margin-y($marg) {
+    margin-top: $marg  !important;
+    margin-bottom: $marg  !important;
+
+}
+
+@mixin svgCustom($posx, $posy, $rotate, $wid) {
+    position: absolute;
+    top: $posy;
+    left: $posx;
+    width: $wid;
+    transform: rotate($rotate);
+    // background-color: $dark-green;
+    filter: invert(48%) sepia(79%);
+    z-index: -1;
+}
+
+
+
+svgCustom {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+%makeflexer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+%makeGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+
+%makeFlex {
+    display: flex;
+    justify-content: center;
+
+}

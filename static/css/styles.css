@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-weight: bold;
+    color: ghostwhite;
+}
+
+
+.custom-jum {
+    min-height: 31rem;
+    padding: 11%;
+    background-color: rgb(83, 86, 80);
+    background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+
+
+}
