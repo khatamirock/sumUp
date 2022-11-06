@@ -111,7 +111,7 @@ def get_top_sentences(pr_vector, sentences, number):
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'robret-kohler'
+app.config['SECRET_KEY'] = 'khatami-onik'
 
 
 @app.route('/')
